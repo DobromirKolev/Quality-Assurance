@@ -1,0 +1,115 @@
+{
+  "id": "f82431df-2305-4c19-b53f-cb70ea4f06b2",
+  "version": "2.0",
+  "name": "youtube",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "ba1102c8-2c42-4bc3-8db4-4f6efef23cd6",
+    "name": "SearchTest",
+    "commands": [{
+      "id": "9a1e5aa0-523f-42a1-8448-56b734072d54",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e158cef-e21b-44d2-8f5a-1bb8f1452651",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd32074c-cc6a-4345-9c78-ba01872a40e6",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#sb_ifc50 > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='sb_ifc50']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec822e31-9b24-4dfa-a7f7-f89173ad4a04",
+      "comment": "",
+      "command": "store",
+      "target": "hello world",
+      "targets": [],
+      "value": "videoName"
+    }, {
+      "id": "0df0b14b-0066-4050-ace5-9c34feda880d",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#sb_ifc50 > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='sb_ifc50']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "hello world"
+    }, {
+      "id": "74e3ead0-f148-479a-a4d0-f58439758de4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//form/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cce162e4-5461-4ef8-9b90-6e9e697b8ce8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#buttons > .style-scope > .yt-simple-endpoint > #button",
+      "targets": [
+        ["css=#buttons > .style-scope > .yt-simple-endpoint > #button", "css:finder"],
+        ["xpath=(//yt-icon-button[@id='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='buttons']/ytd-button-renderer/a/yt-icon-button", "xpath:idRelative"],
+        ["xpath=//div[2]/ytd-button-renderer/a/yt-icon-button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9ca403f-f282-45cc-b17d-1960759ab092",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#buttons > .style-scope > .yt-simple-endpoint > #button",
+      "targets": [
+        ["css=#buttons > .style-scope > .yt-simple-endpoint > #button", "css:finder"],
+        ["xpath=(//yt-icon-button[@id='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='buttons']/ytd-button-renderer/a/yt-icon-button", "xpath:idRelative"],
+        ["xpath=//div[2]/ytd-button-renderer/a/yt-icon-button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17fed189-7d52-4877-8362-6a6ff6a10610",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ytd-item-section-renderer:nth-child(2) > #dismissable #title-wrapper",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(2) > #dismissable #title-wrapper", "css:finder"],
+        ["xpath=(//div[@id='title-wrapper'])[2]", "xpath:attributes"],
+        ["xpath=(//div[@id='meta']/div)[26]", "xpath:idRelative"],
+        ["xpath=//ytd-video-renderer[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "$(videoName)"
+    }]
+  }],
+  "suites": [{
+    "id": "c66a9417-a1e9-40ab-8f92-d17e28c8b086",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ba1102c8-2c42-4bc3-8db4-4f6efef23cd6"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

@@ -1,0 +1,147 @@
+{
+  "id": "f64d2106-cc83-401b-b083-600869cfdfe5",
+  "version": "2.0",
+  "name": "waitTest",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "29acd0ac-0667-420f-993f-432ba3ccfd90",
+    "name": "waitTest",
+    "commands": [{
+      "id": "873140f4-7971-4b84-98d0-57044d58bb6d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a5cdc3c-e96e-4408-92b3-e80ed52c926a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7607bd5d-8cef-43ae-9f79-d17f4a02b3cb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=endpoint",
+      "targets": [
+        ["id=endpoint", "id"],
+        ["css=.style-scope:nth-child(1) > #endpoint", "css:finder"],
+        ["xpath=//a[@id='endpoint']", "xpath:attributes"],
+        ["xpath=//div[@id='items']/ytd-mini-guide-entry-renderer/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//ytd-mini-guide-entry-renderer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Начало')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6f7451a-18c1-4faa-9552-24257bb57c0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(2) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Набиращи популярност')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70e5e744-1d96-4a60-820d-907cc7f3a87d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(3) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[3]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Абонаменти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a532fe60-bceb-47a6-9e0c-b30013bbd09d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.style-scope:nth-child(3) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[3]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Абонаменти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c26ff60-c022-4d29-9482-bcb912cb4ddb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.style-scope:nth-child(3) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[3]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Абонаменти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa88b4c5-fdcf-4d36-ac76-49024b75d4ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(4) > #endpoint > #icon",
+      "targets": [
+        ["css=.style-scope:nth-child(4) > #endpoint > #icon", "css:finder"],
+        ["xpath=(//yt-icon[@id='icon'])[4]", "xpath:attributes"],
+        ["xpath=(//a[@id='endpoint']/yt-icon)[4]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[4]/a/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40b4b57e-8b26-4f14-85e5-5c3e8eda7c52",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytd-mini-guide-renderer:nth-child(4) > #endpoint",
+      "targets": [
+        ["css=.ytd-mini-guide-renderer:nth-child(4) > #endpoint", "css:finder"],
+        ["xpath=(//a[@id='endpoint'])[29]", "xpath:attributes"],
+        ["xpath=//div[@id='items']/ytd-mini-guide-entry-renderer[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/feed/library')])[2]", "xpath:href"],
+        ["xpath=//ytd-mini-guide-entry-renderer[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25448813-ee73-44ad-a6bb-e5a300e816ea",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.style-scope:nth-child(2) > #endpoint > #icon",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #endpoint > #icon", "css:finder"],
+        ["xpath=(//yt-icon[@id='icon'])[2]", "xpath:attributes"],
+        ["xpath=(//a[@id='endpoint']/yt-icon)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/yt-icon", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "c9298100-ab32-49c2-8383-bfb82697e5a5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.style-scope:nth-child(2) > #endpoint > #icon",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #endpoint > #icon", "css:finder"],
+        ["xpath=(//yt-icon[@id='icon'])[2]", "xpath:attributes"],
+        ["xpath=(//a[@id='endpoint']/yt-icon)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "197c5828-51a9-4209-b860-9237c7f9acb7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["29acd0ac-0667-420f-993f-432ba3ccfd90"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

@@ -1,0 +1,141 @@
+{
+  "id": "84d0a29a-6f5a-4d20-9556-3901f44bca75",
+  "version": "2.0",
+  "name": "gamingTrend",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "9e247671-b6d5-4176-a825-13538bf468b2",
+    "name": "trendGames",
+    "commands": [{
+      "id": "f7ac566c-7d9d-4c56-8473-7c382fc6e280",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf6a2430-ede6-4855-9a10-79ef0d6918c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df9be50a-6ae5-4323-8b81-682db36745d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(2) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Trending')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25315f59-ca70-498d-a64b-199ad1985054",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-channel-list-sub-menu-renderer:nth-child(2) #img",
+      "targets": [
+        ["css=.ytd-channel-list-sub-menu-renderer:nth-child(2) #img", "css:finder"],
+        ["xpath=(//img[@id='img'])[69]", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/ytd-channel-list-sub-menu-avatar-renderer[2]/a/yt-img-shadow/img", "xpath:idRelative"],
+        ["xpath=//ytd-channel-list-sub-menu-avatar-renderer[2]/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ac6f055-beee-4cf6-a055-471349b1d9fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!",
+      "targets": [
+        ["linkText=ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!", "linkText"],
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=Bjj8Il4AkjU&t=2s')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc5a60a-85fb-468b-9877-7612fac71374",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!",
+      "targets": [
+        ["linkText=ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!", "linkText"],
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=Bjj8Il4AkjU&t=2s')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "970a2eff-5c5e-4f77-a3a4-08f076951f98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'ЗА ВСЕКИ KILL СИ КУПУВАМ НЕЩО ОТ ITEM SHOP-A!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23ab3088-4f8a-4eb4-8965-3bbf1cf9358c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4.800000190734863)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e9678c7-613b-4c2c-a562-8a44fe67aab0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[27]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0142def1-9dcc-4322-b3e9-b91dba9f6fab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[27]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f24073-4303-41fe-a2ce-78fc1fb56656",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[27]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "35f0a1f6-9aba-4ee8-96c7-8739f1328e9d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e247671-b6d5-4176-a825-13538bf468b2"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

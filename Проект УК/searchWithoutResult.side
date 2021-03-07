@@ -1,0 +1,72 @@
+{
+  "id": "2cbb5851-b5ed-42dc-9229-02675a1c014d",
+  "version": "2.0",
+  "name": "youtube",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "b033827e-cc21-471e-b1e6-ca52c37fd380",
+    "name": "searchWithoutResult",
+    "commands": [{
+      "id": "15bda6ff-c46e-45d2-be6d-49d21f318bdd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f5dbd50-14ef-473f-8917-89e64d54ae39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa22881c-ffe4-4580-a081-61d0908e0f45",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#sb_ifc50 > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='sb_ifc50']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8583845-85d6-467c-9e18-3cbec15f46cb",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#sb_ifc50 > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='sb_ifc50']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sdareyfjdfhdfhdh"
+    }, {
+      "id": "a7e8db76-b6f5-4779-8ca0-d50f16a74104",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//form/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f869b3ff-c8b6-4138-82f7-e41c27c2c38b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b033827e-cc21-471e-b1e6-ca52c37fd380"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

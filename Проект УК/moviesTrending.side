@@ -1,0 +1,167 @@
+{
+  "id": "b127a778-336d-4b32-89f8-4dbd683c1dda",
+  "version": "2.0",
+  "name": "filmsTrending",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "8b18d2db-bc60-44df-be71-bb1507bbe0cf",
+    "name": "moviesTrending",
+    "commands": [{
+      "id": "cb4c23ba-64d9-44bf-92d3-70bb8fb516be",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11b8d442-4e0a-439a-9d31-7477ef917bb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29bc7e5e-729e-4a0f-9da9-c5c8bb437dc8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.style-scope:nth-child(3) > #content #thumbnail #img",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > #content #thumbnail #img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/qANlce712gY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAHWu3C8Iqrc6uIM0-2d5j-NBwPRw')]", "xpath:img"],
+        ["xpath=(//img[@id='img'])[6]", "xpath:attributes"],
+        ["xpath=(//a[@id='thumbnail']/yt-img-shadow/img)[3]", "xpath:idRelative"],
+        ["xpath=//ytd-rich-item-renderer[3]/div/ytd-rich-grid-media/div/ytd-thumbnail/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3787809-12dc-4083-8da0-143f35574a8f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.style-scope:nth-child(3) > #content #thumbnail #img",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > #content #thumbnail #img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/qANlce712gY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAHWu3C8Iqrc6uIM0-2d5j-NBwPRw')]", "xpath:img"],
+        ["xpath=(//img[@id='img'])[6]", "xpath:attributes"],
+        ["xpath=(//a[@id='thumbnail']/yt-img-shadow/img)[3]", "xpath:idRelative"],
+        ["xpath=//ytd-rich-item-renderer[3]/div/ytd-rich-grid-media/div/ytd-thumbnail/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b862783-d249-4ac8-9c51-b09c1610b5d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(2) > #endpoint > .title",
+      "targets": [
+        ["css=.style-scope:nth-child(2) > #endpoint > .title", "css:finder"],
+        ["xpath=(//a[@id='endpoint']/span)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Trending')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e95512-926c-4f84-898c-6cebf834e5de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(3) > .yt-simple-endpoint #img",
+      "targets": [
+        ["css=.style-scope:nth-child(3) > .yt-simple-endpoint #img", "css:finder"],
+        ["xpath=(//img[@id='img'])[70]", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/ytd-channel-list-sub-menu-avatar-renderer[3]/a/yt-img-shadow/img", "xpath:idRelative"],
+        ["xpath=//ytd-channel-list-sub-menu-avatar-renderer[3]/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a520c285-b33f-4cfe-959f-9b67ca799803",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Sen Çal Kapımı 27. Bölüm Fragmanı",
+      "targets": [
+        ["linkText=Sen Çal Kapımı 27. Bölüm Fragmanı", "linkText"],
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=d45MzX44n7k')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sen Çal Kapımı 27. Bölüm Fragmanı')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca0963b-f868-4211-a9c2-d83b7b0e3599",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Sen Çal Kapımı 27. Bölüm Fragmanı",
+      "targets": [
+        ["linkText=Sen Çal Kapımı 27. Bölüm Fragmanı", "linkText"],
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title", "css:finder"],
+        ["xpath=//a[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='title-wrapper']/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/watch?v=d45MzX44n7k')])[2]", "xpath:href"],
+        ["xpath=//div/div/div/div/h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sen Çal Kapımı 27. Bölüm Fragmanı')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8cc48d9-c766-4575-b4c4-2d3c04f408be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Sen Çal Kapımı 27. Bölüm Fragmanı')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a535ca-2bc1-4335-b0c1-830aafb13711",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4.800000190734863)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a94c6c90-8d5e-4681-ab1c-9d40efd4c7da",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[34]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1922cf4-f6f7-4ef7-b8e8-167e8d90f90a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[34]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2136ee2-ab94-4575-ad97-12cfe2cfa0c7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[34]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2121c763-cba6-4e72-a769-1d3e0167f4ba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8b18d2db-bc60-44df-be71-bb1507bbe0cf"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

@@ -1,0 +1,110 @@
+{
+  "id": "18201bbe-34b6-445b-a191-57f509e86341",
+  "version": "2.0",
+  "name": "youtube",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "d913ca2c-07cf-4f2f-8a7d-c45a769beab4",
+    "name": "trendSongs",
+    "commands": [{
+      "id": "ce3c0f4d-bc61-4835-895d-bd0188d50b2c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "193276d6-d98b-405c-b279-10be16e4fee9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98b3c581-dc21-4f5e-b60f-b06fb45aec13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(2) #icon",
+      "targets": [
+        ["css=.style-scope:nth-child(2) #icon", "css:finder"],
+        ["xpath=(//yt-icon[@id='icon'])[2]", "xpath:attributes"],
+        ["xpath=(//a[@id='endpoint']/yt-icon)[2]", "xpath:idRelative"],
+        ["xpath=//ytd-mini-guide-entry-renderer[2]/a/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7acae5d3-3f0a-4b63-ab0e-8f41a8269f99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-channel-list-sub-menu-renderer:nth-child(1) > .yt-simple-endpoint #img",
+      "targets": [
+        ["css=.ytd-channel-list-sub-menu-renderer:nth-child(1) > .yt-simple-endpoint #img", "css:finder"],
+        ["xpath=(//img[@id='img'])[68]", "xpath:attributes"],
+        ["xpath=//div[@id='contents']/ytd-channel-list-sub-menu-avatar-renderer/a/yt-img-shadow/img", "xpath:idRelative"],
+        ["xpath=//ytd-channel-list-sub-menu-avatar-renderer/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da297b04-f15f-4c52-8ca3-7da45db31a17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)",
+      "targets": [
+        ["css=.style-scope:nth-child(1) > #dismissable > .text-wrapper > #meta > #title-wrapper #video-title > .style-scope:nth-child(2)", "css:finder"],
+        ["xpath=//a[@id='video-title']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/h3/a/yt-formatted-string", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "031b9b48-9488-406d-899b-78984a8bee3b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4.800000190734863)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9d6b543-a2a5-4412-ac20-2c9196ac3fc6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[25]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "468910a3-e84f-431e-95c4-4ae0b5ee30d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[25]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8379b80-bcc7-4df9-8d86-7fc908794103",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[25]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5361324e-f012-4ff7-8276-4df4284326e8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d913ca2c-07cf-4f2f-8a7d-c45a769beab4"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

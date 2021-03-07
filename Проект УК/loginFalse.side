@@ -1,0 +1,146 @@
+{
+  "id": "35d7c6ae-b452-4ad7-97a5-d1f1cc920545",
+  "version": "2.0",
+  "name": "youtube",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "12ec521a-1355-4e1e-81c4-0f631b0e827b",
+    "name": "loginFalseTest",
+    "commands": [{
+      "id": "6f90700b-2ccb-4a27-901b-2b2efb2ba580",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb6ef722-3b34-4cea-ab44-05c6f8c32bf7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5091c823-c1f2-482a-b2c1-ddfd04678d1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.style-suggestive #text",
+      "targets": [
+        ["css=.style-suggestive #text", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='text'])[2]", "xpath:attributes"],
+        ["xpath=(//paper-button[@id='button']/yt-formatted-string)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ytd-button-renderer/a/paper-button/yt-formatted-string", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c24135-f939-4082-80da-267bda42444a",
+      "comment": "",
+      "command": "click",
+      "target": "id=profileIdentifier",
+      "targets": [
+        ["id=profileIdentifier", "id"],
+        ["css=#profileIdentifier", "css:finder"],
+        ["xpath=//div[@id='profileIdentifier']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e5d6d2-5e74-4231-8498-4845af87af98",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#password .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ead6ab2-8d59-4b70-b4bd-4f2f9b45baf3",
+      "comment": "",
+      "command": "store",
+      "target": "123456",
+      "targets": [],
+      "value": "loginpassword"
+    }, {
+      "id": "0920d05b-3aa1-4d8a-a20e-b9e5b8b8fc74",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=#password .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "$(loginpassword)"
+    }, {
+      "id": "0f935b97-657a-4614-8b93-8ef058ba7a0b",
+      "comment": "",
+      "command": "if",
+      "target": "${loginpassword}===\"bellas98\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "217da679-3cec-4a47-bf2c-f7d0f7e8a3a8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"correct password\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "aa7d0102-4878-40d7-a4dc-e9af11f2ca92",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ae0790e-2f47-462a-85e4-2414468370a4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"incorrect password\"",
+      "targets": [],
+      "value": "output"
+    }, {
+      "id": "1c56d538-54bc-43ef-8662-7ce6c8964011",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be44dec8-89e5-4bf8-ac8e-12693eb8ae6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/div/button/div[2]", "xpath:idRelative"],
+        ["xpath=//button/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0023b590-cde9-4106-b5b4-9b67d5795238",
+      "comment": "",
+      "command": "assert",
+      "target": "output",
+      "targets": [],
+      "value": "incorrect password"
+    }]
+  }],
+  "suites": [{
+    "id": "bda57933-40ca-422d-9304-7c36642e2ea0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["12ec521a-1355-4e1e-81c4-0f631b0e827b"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
